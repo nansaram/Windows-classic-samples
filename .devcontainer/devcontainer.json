@@ -1,0 +1,12 @@
+{
+  "name": "Windows Development Environment",
+  "image": "mcr.microsoft.com/windows/servercore:ltsc2019",
+  "settings": {
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools"
+  ],
+  "postCreateCommand": "powershell -NoProfile -ExecutionPolicy Bypass -File setup.ps1"
+}
